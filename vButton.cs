@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace OpenKeyboard{
 	public class vButton : Button{
@@ -16,6 +17,13 @@ namespace OpenKeyboard{
 		public string ShiftText{
 			get { return (string)this.GetValue(ShiftTextProperty); }
 			set { this.SetValue(ShiftTextProperty, value); } 
+		}//prop
+       
+        // Dependency Property
+        public static DependencyProperty RgbColorProperty = DependencyProperty.Register("RgbColor", typeof(SolidColorBrush), typeof(vButton), new FrameworkPropertyMetadata(new SolidColorBrush()));
+		public SolidColorBrush RgbColor{
+			get { return (SolidColorBrush)this.GetValue(RgbColorProperty); }
+			set { this.SetValue(RgbColorProperty, value); } 
 		}//prop
 
         public string Title{

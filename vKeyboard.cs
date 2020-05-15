@@ -210,7 +210,10 @@ namespace OpenKeyboard {
             mTimer.Start();
             mIsTimerOn = true;
         }//func
-        
-        private static void onTick(object sender, ElapsedEventArgs e) {vKeyboard.ProcessCommand(mKBCommand); }
+
+        private static void onTick(object sender, ElapsedEventArgs e)
+        {
+            vKeyboard.ProcessCommand(mKBCommand);
+        }
     }//cls
 }//ns

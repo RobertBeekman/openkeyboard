@@ -1,13 +1,16 @@
 ﻿using System;
+using System.Linq;
 using System.Xml;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using RGB.NET.Core;
+using Color = System.Windows.Media.Color;
 
 namespace OpenKeyboard{
 	public abstract class vLayout{
         public static FontFamily mIconFont = new FontFamily(new Uri("pack://application:,,,/fonts/#FontAwesome"), "./#FontAwesome");
-
+        private static Random _rand = new Random();
         public static bool Load(string fName,Grid uiGrid,Window uiWindow){
             try{ 
 			    //..........................................
@@ -95,7 +98,7 @@ namespace OpenKeyboard{
 
             return false;
         }//func
-
+        
 		private static Grid CreateGrid(){
 			Grid grid = new Grid();
 			grid.RowDefinitions.Add(new RowDefinition(){ Height=new GridLength(1,GridUnitType.Star) });
@@ -182,5 +185,44 @@ namespace OpenKeyboard{
 
             return rtn; 
 		}//func
-	}//cls
+
+        public static void UpdateColors(Grid mainContainer)
+        {
+            var surface = RGBSurface.Instance;
+            var keyboard = surface.Devices.FirstOrDefault(d => d.DeviceInfo.DeviceType == RGBDeviceType.Keyboard);
+            if (keyboard == null)
+                return;
+
+            keyboard.SyncBack();
+
+            mainContainer.Dispatcher.Invoke(() =>
+            {
+                foreach (UIElement mainContainerChild in mainContainer.Children)
+                {
+                    if (!(mainContainerChild is Grid grid)) 
+                        continue;
+
+                    foreach (UIElement gridChild in grid.Children)
+                    {
+                        if (!(gridChild is vButton vButton)) 
+                            continue;
+
+                        var key = vButton.KBCommand.KBKeys != null 
+                            ? vButton.KBCommand.KBKeys[0].ToLower() 
+                            : vButton.KBCommand.SendString.ToLower();
+
+                        var led = keyboard.FirstOrDefault(l => l.Id.ToString().Replace("Keyboard_", "").ToLower() == key);
+                        if (led != null)
+                        {
+                            var (a, r, g, b) = led.Color.GetRGBBytes();
+                            vButton.RgbColor = new SolidColorBrush(Color.FromArgb(a, r, g, b));
+                        }
+                    }
+
+                }
+            });
+
+           
+        }
+    }//cls
 }//ns
