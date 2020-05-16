@@ -130,6 +130,7 @@ namespace OpenKeyboard{
 
                     btn.KBCommand.SendString = elm.GetAttribute("string");
                     btn.KBCommand.shSendString = elm.GetAttribute("shstring");
+                    btn.KBCommand.LedId = elm.GetAttribute("ledid");
 
                     btn.PreviewMouseLeftButtonDown += BtnTouch_Down;
                     btn.PreviewMouseLeftButtonUp += BtnTouch_Up;
@@ -206,12 +207,8 @@ namespace OpenKeyboard{
                     {
                         if (!(gridChild is vButton vButton)) 
                             continue;
-
-                        var key = vButton.KBCommand.KBKeys != null 
-                            ? vButton.KBCommand.KBKeys[0].ToLower() 
-                            : vButton.KBCommand.SendString.ToLower();
-
-                        var led = keyboard.FirstOrDefault(l => l.Id.ToString().Replace("Keyboard_", "").ToLower() == key);
+                        
+                        var led = keyboard.FirstOrDefault(l => l.Id.ToString() == vButton.KBCommand.LedId);
                         if (led != null)
                         {
                             var (a, r, g, b) = led.Color.GetRGBBytes();

@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <layout width="60" height="420" vpos="center" hpos="right" margin="6,20,6,6">
   <row>
-    <key code="PGUP" text="\uf102" fsize="20"/>
+    <key code="PGUP" text="\uf102" fsize="20" ledid="Keyboard_Escape"/>
   </row>
   <row>
-    <key code="PGDOWN" text="\uf103" fsize="20"/>
+    <key code="PGDOWN" text="\uf103" fsize="20" ledid="Keyboard_Escape"/>
   </row>
 
   <row>
-    <key code="j" text="\uf064" fsize="16"/>
+    <key code="j" text="\uf064" fsize="16" ledid="Keyboard_GraveAccentAndTilde"/>
   </row>
   <row>
-    <key code="k" text="\uf112" fsize="16"/>
+    <key code="k" text="\uf112" fsize="16" ledid="Keyboard_Tab"/>
   </row>
 
   <row>
-    <key code="m" text="\uf00c" fsize="16"/>
+    <key code="m" text="\uf00c" fsize="16" ledid="Keyboard_CapsLock"/>
   </row>
-  <row><key code="o" text="\uf141" fsize="16"/></row>
+  <row><key code="o" text="\uf141" fsize="16" ledid="Keyboard_LeftShift"/></row>
 
-  <row><key code="DEL" text="Delete"/></row>
-	<row><key code="ENTER" text="Enter"/></row>
+  <row><key code="DEL" text="Delete" ledid="Keyboard_LeftCtrl"/></row>
+	<row><key code="ENTER" text="Enter" ledid="Keyboard_LeftCtrl"/></row>
   
   <row>
     <menu text="\uf078" fsize="16">

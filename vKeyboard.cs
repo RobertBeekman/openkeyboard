@@ -11,6 +11,7 @@ namespace OpenKeyboard {
         public string[] KBShKeys;
         public string SendString;
         public string shSendString;
+        public string LedId { get; set; }
     }//struct
 
     public struct KeyItem {

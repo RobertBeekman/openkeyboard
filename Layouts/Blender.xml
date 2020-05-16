@@ -2,42 +2,42 @@
 <layout width="150" height="250" vpos="center" hpos="right" margin="6,20,6,6">
   
   <row>
-    <key code="DECIMAL" text="\uf247" fsize="14"/>
-    <key code="NUM7" text="\uf102" fsize="20"/>
-    <key code="NUM0" text="\uf03d" fsize="14"/>
+    <key code="DECIMAL" text="\uf247" fsize="14" ledid="Keyboard_NumLock"/>
+    <key code="NUM7" text="\uf102" fsize="20" ledid="Keyboard_NumSlash"/>
+    <key code="NUM0" text="\uf03d" fsize="14" ledid="Keyboard_NumAsterisk"/>
   </row>
 
   <row>
-    <key code="LCTRL NUM3" text="\uf100" fsize="20"/>
-    <key code="NUM1" text="\uf069" fsize="15"/>
-    <key code="NUM3" text="\uf101" fsize="20"/>
+    <key code="LCTRL NUM3" text="\uf100" fsize="20" ledid="Keyboard_Num7"/>
+    <key code="NUM1" text="\uf069" fsize="15" ledid="Keyboard_Num8"/>
+    <key code="NUM3" text="\uf101" fsize="20" ledid="Keyboard_Num9"/>
   </row>
   
   <row>
-    <key code="t" text="\uf0db" fsize="16"/>
-    <key code="LCTRL NUM7" text="\uf103" fsize="20"/>
-    <key code="n" text="\uf0db" fsize="16"/>
+    <key code="t" text="\uf0db" fsize="16" ledid="Keyboard_Num4"/>
+    <key code="LCTRL NUM7" text="\uf103" fsize="20" ledid="Keyboard_Num5"/>
+    <key code="n" text="\uf0db" fsize="16" ledid="Keyboard_Num6"/>
   </row>
     
   <row>
-    <key code="TAB" text="\uf1b2" fsize="20"/>
-    <key code="z" text="\uf20e" fsize="20"/>
-    <key code="LSHIFT c" text="\uf05b" fsize="20"/>
+    <key code="TAB" text="\uf1b2" fsize="20" ledid="Keyboard_Num1"/>
+    <key code="z" text="\uf20e" fsize="20" ledid="Keyboard_Num2"/>
+    <key code="LSHIFT c" text="\uf05b" fsize="20" ledid="Keyboard_Num3"/>
   </row>
   
   <row>
-    <menu text="Grab">
+    <menu text="Grab" ledid="Keyboard_Num0">
       <key code="g z" text="Grab Z"/>
       <key code="g x" text="Grab X"/>
       <key code="g y" text="Grab Y"/>
     </menu>
-    <menu text="Scale">
+    <menu text="Scale" ledid="Keyboard_Num0">
       <key code="s z" text="Scale Z"/>
       <key code="s x" text="Scale X"/>
       <key code="s y" text="Scale Y"/>
       <key code="s SHIFT z" text="Scale XY"/>
     </menu>
-    <menu text="Rotate">
+    <menu text="Rotate" ledid="Keyboard_NumPeriodAndDelete">
       <key code="r z" text="Rotate Z"/>
       <key code="r x" text="Rotate X"/>
       <key code="r y" text="Rotate Y"/>
@@ -45,7 +45,7 @@
   </row>
 
   <row>
-    <menu text="\uf078" fsize="16">
+    <menu text="\uf078" fsize="16" ledid="Keyboard_Num0">
       <key code="LCTRL b" text="Bevel"/>
       <key code="i" text="Inset"/>
       <key code="LSHIFT d" text="Duplicate"/>

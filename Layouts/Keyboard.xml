@@ -1,74 +1,74 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <layout width="600" height="220" vpos="bottom" hpos="center" margin="6,20,6,6">  
 	<row>
-	  <key code="TILDE" text="~"/>
-	  <key code="1" text="1" shcode="{!}" shtext="!"/>
-	  <key code="2" text="2" shcode="{@}" shtext="@"/>
-	  <key code="3" text="3" shcode="{#}" shtext="#"/>
-	  <key code="4" text="4" shcode="{$}" shtext="$"/>
-	  <key code="5" text="5" shcode="{%}" shtext="%"/>
-	  <key code="6" text="6" shcode="{^}" shtext="^"/>
-	  <key code="7" text="7" shcode="{&amp;}" shtext="&amp;"/>
-	  <key code="8" text="8" shcode="{*}" shtext="*"/>
-	  <key code="9" text="9" shcode="{(}" shtext="("/>
-	  <key code="0" text="0" shcode="{)}" shtext=")"/>
-	  <key code="BACKSPACE" text="Back"/>
-	  <key code="DEL" text="Del"/>
+	  <key code="TILDE" text="~" ledid="Keyboard_GraveAccentAndTilde"/>
+	  <key code="1" text="1" shcode="{!}" shtext="!" ledid="Keyboard_1"/>
+    <key code="2" text="2" shcode="{@}" shtext="@" ledid="Keyboard_2"/>
+    <key code="3" text="3" shcode="{#}" shtext="#" ledid="Keyboard_3"/>
+    <key code="4" text="4" shcode="{$}" shtext="$" ledid="Keyboard_4"/>
+    <key code="5" text="5" shcode="{%}" shtext="%" ledid="Keyboard_5"/>
+    <key code="6" text="6" shcode="{^}" shtext="^" ledid="Keyboard_6"/>
+	  <key code="7" text="7" shcode="{&amp;}" shtext="&amp;" ledid="Keyboard_7"/>
+	  <key code="8" text="8" shcode="{*}" shtext="*" ledid="Keyboard_8"/>
+	  <key code="9" text="9" shcode="{(}" shtext="(" ledid="Keyboard_9"/>
+	  <key code="0" text="0" shcode="{)}" shtext=")" ledid="Keyboard_0"/>
+	  <key code="BACKSPACE" text="Back" ledid="Keyboard_MinusAndUnderscore"/>
+	  <key code="DEL" text="Del" ledid="Keyboard_EqualsAndPlus"/>
 	</row>
 
 	<row>
-	  <key code="TAB" text="Tab" weight="2"/>
-	  <key code="q" text="q"/>
-	  <key code="w" text="w"/>
-	  <key code="e" text="e"/>
-	  <key code="r" text="r"/>
-	  <key code="t" text="t"/>
-	  <key code="y" text="y"/>
-	  <key code="u" text="u"/>
-	  <key code="i" text="i"/>
-	  <key code="o" text="o"/>
-	  <key code="p" text="p"/>
-	  <key code="OEM4" text="[" shtext="{"/>
-	  <key code="OEM6" text="]" shtext="}"/>
-	  <key code="OEM5" text="\" shtext="|"/>
+    <key code="TAB" text="Tab" weight="2" ledid="Keyboard_Tab"/>
+    <key code="q" text="q" ledid="Keyboard_Q"/>
+    <key code="w" text="w" ledid="Keyboard_W"/>
+    <key code="e" text="e" ledid="Keyboard_E"/>
+    <key code="r" text="r" ledid="Keyboard_R"/>
+    <key code="t" text="t" ledid="Keyboard_T"/>
+    <key code="y" text="y" ledid="Keyboard_Y"/>
+    <key code="u" text="u" ledid="Keyboard_U"/>
+    <key code="i" text="i" ledid="Keyboard_I"/>
+    <key code="o" text="o" ledid="Keyboard_O"/>
+    <key code="p" text="p" ledid="Keyboard_P"/>
+	  <key code="OEM4" text="[" shtext="{" ledid="Keyboard_BracketLeft"/>
+	  <key code="OEM6" text="]" shtext="}" ledid="Keyboard_BracketRight"/>
+	  <key code="OEM5" text="\" shtext="|" ledid="Keyboard_Backslash"/>
 	</row>
 
 	<row>
-	  <key code="CAPSLOCK" text="Caps"/>
-	  <key code="a" text="a"/>
-	  <key code="s" text="s"/>
-	  <key code="d" text="d"/>
-	  <key code="f" text="f"/>
-	  <key code="g" text="g"/>
-	  <key code="h" text="h"/>
-	  <key code="j" text="j"/>
-	  <key code="k" text="k"/>
-	  <key code="l" text="l"/>
-	  <key code="OEM1" text=";" shtext=":"/>
-	  <key code="OEM7" text="'" shtext="&quot;"/>
-	  <key code="ENTER" text="Enter" weight="1.5"/>
+	  <key code="CAPSLOCK" text="Caps" ledid="Keyboard_CapsLock"/>
+	  <key code="a" text="a" ledid="Keyboard_CapsLock"/>
+    <key code="s" text="s" ledid="Keyboard_CapsLock"/>
+    <key code="d" text="d" ledid="Keyboard_A"/>
+    <key code="f" text="f" ledid="Keyboard_A"/>
+    <key code="g" text="g" ledid="Keyboard_S"/>
+    <key code="h" text="h" ledid="Keyboard_S"/>
+    <key code="j" text="j" ledid="Keyboard_D"/>
+    <key code="k" text="k" ledid="Keyboard_D"/>
+    <key code="l" text="l" ledid="Keyboard_F"/>
+	  <key code="OEM1" text=";" shtext=":" ledid="Keyboard_F"/>
+	  <key code="OEM7" text="'" shtext="&quot;" ledid="Keyboard_G"/>
+	  <key code="ENTER" text="Enter" weight="1.5" ledid="Keyboard_L"/>
 	</row>
 
 	<row>
-	  <key code="LSHIFT" text="Shift" weight="1"/>
-	  <key code="z" text="z"/>
-	  <key code="x" text="x"/>
-	  <key code="c" text="c"/>
-	  <key code="v" text="v"/>
-	  <key code="b" text="b"/>
-	  <key code="n" text="n"/>
-	  <key code="m" text="m"/>
-	  <key code="COMMA" text="," shcode="{&lt;}" shtext="&lt;"/>
-	  <key code="PERIOD" text="." shcode="{&gt;}" shtext="&gt;"/>
-	  <key code="OEM2" text="/" shtext="?"/>
-	  <key code="RSHIFT" text="Shift" weight="1"/>
+	  <key code="LSHIFT" text="Shift" weight="1" ledid="Keyboard_LeftShift"/>
+	  <key code="z" text="z" ledid="Keyboard_Z"/>
+	  <key code="x" text="x" ledid="Keyboard_X"/>
+	  <key code="c" text="c" ledid="Keyboard_C"/>
+	  <key code="v" text="v" ledid="Keyboard_V"/>
+	  <key code="b" text="b" ledid="Keyboard_B"/>
+	  <key code="n" text="n" ledid="Keyboard_N"/>
+	  <key code="m" text="m" ledid="Keyboard_M"/>
+	  <key code="COMMA" text="," shcode="{&lt;}" shtext="&lt;" ledid="Keyboard_CommaAndLessThan"/>
+	  <key code="PERIOD" text="." shcode="{&gt;}" shtext="&gt;" ledid="Keyboard_PeriodAndBiggerThan"/>
+	  <key code="OEM2" text="/" shtext="?" ledid="Keyboard_SlashAndQuestionMark"/>
+	  <key code="RSHIFT" text="Shift" weight="1" ledid="Keyboard_RightShift"/>
 	</row>
 	
 	<row>
-	  <key code="UP" text="Up"/>
-	  <key code="DOWN" text="Down"/>
-	  <key code="SPACE" text="Space" weight="4"/>
-	  <key code="LEFT" text="Left"/>
-	  <key code="RIGHT" text="Right"/>
+	  <key code="UP" text="Up" ledid="Keyboard_LeftCtrl"/>
+	  <key code="DOWN" text="Down" ledid="Keyboard_LeftGui"/>
+	  <key code="SPACE" text="Space" weight="4" ledid="Keyboard_Space"/>
+	  <key code="LEFT" text="Left" ledid="Keyboard_Application"/>
+	  <key code="RIGHT" text="Right" ledid="Keyboard_RightCtrl"/>
 	</row>
 </layout>
